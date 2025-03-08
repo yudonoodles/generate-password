@@ -10,23 +10,41 @@ body {
 
 h1 {
     margin: 0; 
+    font-size: 52px;
+    font-weight: 700;
 }
 
 p {
     color: #D5D4D8;
     font-family: Inter;
+    font-size: 20px;
     margin-top: 12px;
 }
 
+/* Main CTA */
+
 #genpassword {
-    padding: 10px 18px; 
+    padding: 10px 32px; 
     background-color: #10B981;
     color: white; 
     border-radius: 6px;
     border: none; 
     margin: 42px 0 32px 0;
     font-family: inter;
+    font-size: medium;
+    font-weight: 500;
 }
+
+#genpassword:active {
+    background: #0a7350;
+}
+
+#genpassword:hover {
+    background: #0a7350;
+    cursor:pointer;
+}
+
+/* line */
 
 hr {
     height: 1px; 
@@ -34,14 +52,28 @@ hr {
     border: 0;
 }
 
-#card {
+/* Bottom-container */
+
+#container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 24px;
     margin-top: 32px;
-    align-items: center;
-    max-width: 1000px;
+    width: 100%;
+    align-items: stretch;
 }
+
+
+/* Box and Button grouping */
+
+.password-button {
+    display:flex;
+    gap: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Password box */
 
 .password-box {
     background-color: #273549;
@@ -53,11 +85,10 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
-#textcolor {
-    color: #55F991;
-}
+/* copy button */
 
 #copy {
     padding: 12px 10px;
@@ -66,12 +97,14 @@ hr {
     background-color: transparent;
     color: white; 
     font-family: inter;
+    width: 50px;
 }
+
+/* btn states and styling */
 
 #copy:active {
     background: #0a7350; 
 }
-
 #copy:disabled {
     background: f1f1f1;
     border: 2px solid #333333;
